@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f3e39d0dd90c1985ad3763c349685063.js"
+  "/precache-manifest.b857e21729d1805b052b1ea8b699ef37.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "trip-plan-vue"});

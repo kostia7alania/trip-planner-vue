@@ -18,6 +18,8 @@ Thanks to surge for fast & free hosting
 
 - PWA
 
+- Drag&Drap
+
 ## Project setup
 
 ```
