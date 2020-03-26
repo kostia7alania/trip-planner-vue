@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-subheader>Places </v-subheader>
+    <v-subheader>Places to visit</v-subheader>
     <div class="text-center">
       <v-expand-transition>
         <v-btn
