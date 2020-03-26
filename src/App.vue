@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <Toolbar />
+    <v-content>
+      <v-row class="text-center">
+        <v-col cols="6">
+          <Places />
+        </v-col>
+        <v-col cols="6">
+          <Countries />
+        </v-col>
+      </v-row>
+    </v-content>
+    <Snackbar />
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import "@/assets/flags.scss";
+import { mapMutations } from 'vuex';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: "App",
+  components: {
+    Toolbar: () => import("@/components/Toolbar"),
+    Countries: () => import("@/components/Countries"),
+    Places: () => import("@/components/Places"),
+    Snackbar: () => import("@/components/Snackbar")
+  },
+  created(){
+    this.SET_LOADING(false)
+  },
+  methods: {
+    ...mapMutations([
+      'SET_LOADING'
+    ])
   }
-}
-</style>
+};
+</script>

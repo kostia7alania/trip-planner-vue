@@ -1,51 +1,58 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import countries from '@/assets/flags'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  plugins: [createPersistedState()],
   state: {
-    currentCountry: 'Russia',
-    countries: [
-      {
-        name: 'Russia',
-        places: {
-          start: [],
-          stop: [],
-        }
-      },
-      {
-        name: 'USA',
-        places: {
-          start: [],
-          stop: [],
-        }
-      },
-      {
-        name: 'Ukraine',
-        places: {
-          start: [],
-          stop: [],
-        }
-      }
-    ]
+    finished: false,
+    countries,
+    selectedCountries: [],
+    isLoading: false,
+    snackbar: false
   },
   mutations: {
-    SET_CURRENT_COUNTRY(state, country) {
-      state.currentCountry = country
+    CLEAR_SELECTED_COUNTRIES(state) {
+      state.selectedCountries = []
     },
-    SET_START(state, { name, start }){
-      const index = state.countries.findIndex(country=>country.name === name)
-      state[index].places.start = start
+    ADD_COUNTRY(state, country) {
+      state.selectedCountries.push(country)
     },
-    SET_STOP(state, { name, stop }){
-      const index = state.countries.findIndex(country=>country.name === name)
-      state[index].places.start = stop
+    REMOVE_COUNTRY(state, index) {
+      state.selectedCountries.splice(index, 1)
     },
+    SET_FINISH(state, value) {
+      state.finished = value
+    },
+    SET_LOADING(state, value) {
+      state.isLoading = value
+    },
+    SET_SNACKBAR(state, value) {
+      state.snackbar = value
+    }
   },
   actions: {
-
-  },
-  modules: {
+    async sendHandler({
+      state,
+      commit
+    }) {
+      commit('SET_LOADING', true)
+      const {
+        default: axios
+      } = await import( /* webpackChunkName: "axiosInstance" */ '@/http')
+      try {
+        const res = await axios.post('https://jsonplaceholder.typicode.com/post', state.selectedCountries)
+        commit('CLEAR_SELECTED_COUNTRIES')
+        commit('SET_FINISH', false)
+        return res
+      } catch (e) {
+        throw new Error(e)
+      } finally {
+        commit('SET_LOADING', false)
+      }
+    }
   }
 })

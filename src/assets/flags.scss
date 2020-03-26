@@ -1,0 +1,536 @@
+/* Пиктограммы государственных флагов в спрайте */
+/* v0.2, 28 февраля 2012 года */
+/* @author Артём Поликарпов, artpolikarpov.ru (artpolikarpov@gmail.com) */
+/* @author Никита Иванов (исходные пиктограммы флагов), nickivanov.ru (nickivanov@nickivanov.ru) */
+/* Набор распостраняется на условиях лицензии CC-BY-SA */
+/* Эти летом я был: в <i class="flag-HN"></i> Гондурасе, <i class="flag-LI"></i> Лихтенштейне, и <i class="flag-SE"></i> Швеции. */
+
+.flag {
+    &__NOWHERE, &__ABKHAZIA, &__AD, &__AE, &__AF, &__AG, &__AI, &__AL, &__AM, &__AN, &__AO, &__AQ, &__AR, &__AS, &__AT, &__AU, &__AW, &__AX, &__AZ, &__BA, &__BB, &__BD, &__BE, &__BF, &__BG, &__BH, &__BI, &__BJ, &__BL, &__BM, &__BN, &__BO, &__BR, &__BS, &__BT, &__BV, &__BW, &__BY, &__BZ, &__CA, &__CC, &__CD, &__CF, &__CG, &__CH, &__CI, &__CK, &__CL, &__CM, &__CN, &__CO, &__CR, &__CU, &__CV, &__CX, &__CY, &__CZ, &__DE, &__DJ, &__DK, &__DM, &__DO, &__DZ, &__EC, &__EE, &__EG, &__EH, &__ER, &__ES-CE, &__ES-ML, &__ES, &__ET, &__EU, &__FI, &__FJ, &__FK, &__FM, &__FO, &__FR, &__GA, &__GB, &__GD, &__GE, &__GF, &__GG, &__GH, &__GI, &__GL, &__GM, &__GN, &__GP, &__GQ, &__GR, &__GS, &__GT, &__GU, &__GW, &__GY, &__HK, &__HM, &__HN, &__HR, &__HT, &__HU, &__IC, &__ID, &__IE, &__IL, &__IM, &__IN, &__IO, &__IQ, &__IR, &__IS, &__IT, &__JE, &__JM, &__JO, &__JP, &__KE, &__KG, &__KH, &__KI, &__KM, &__KN, &__KOSOVO, &__KP, &__KR, &__KW, &__KY, &__KZ, &__LA, &__LB, &__LC, &__LI, &__LK, &__LR, &__LS, &__LT, &__LU, &__LV, &__LY, &__MA, &__MC, &__MD, &__ME, &__MF, &__MG, &__MH, &__MK, &__ML, &__MM, &__MN, &__MO, &__MP, &__MQ, &__MR, &__MS, &__MT, &__MU, &__MV, &__MW, &__MX, &__MY, &__MZ, &__NA, &__NC, &__NE, &__NF, &__NG, &__NI, &__NKR, &__NL, &__NO, &__NP, &__NR, &__NU, &__NZ, &__OM, &__PA, &__PE, &__PF, &__PG, &__PH, &__PK, &__PL, &__PM, &__PN, &__PR, &__PS, &__PT, &__PW, &__PY, &__QA, &__RE, &__RO, &__RS, &__RU, &__RW, &__SA, &__SB, &__SC, &__SD, &__SE, &__SG, &__SH, &__SI, &__SJ, &__SK, &__SL, &__SM, &__SN, &__SO, &__SOUTH-OSSETIA, &__SR, &__SS, &__ST, &__SV, &__SY, &__SZ, &__TC, &__TD, &__TF, &__TG, &__TH, &__TJ, &__TK, &__TL, &__TM, &__TN, &__TO, &__TR, &__TT, &__TV, &__TW, &__TZ, &__UA, &__UG, &__UM, &__US, &__UY, &__UZ, &__VA, &__VC, &__VE, &__VG, &__VI, &__VN, &__VU, &__WF, &__WS, &__YE, &__YT, &__ZA, &__ZM, &__ZW {
+        background: url("./flags.png") no-repeat 0 9px;
+        display: -moz-inline-box;
+        -moz-box-orient: vertical;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: baseline;
+        position: relative;
+        overflow: hidden;
+        width: 16px;
+        height: 9px;
+        font-size: 0;
+        line-height: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__ABKHAZIA { background-position: 0 0px; }
+
+    &__AD { background-position: 0 -9px; }
+
+    &__AE { background-position: 0 -18px; }
+
+    &__AF { background-position: 0 -27px; }
+
+    &__AG { background-position: 0 -36px; }
+
+    &__AI { background-position: 0 -45px; }
+
+    &__AL { background-position: 0 -54px; }
+
+    &__AM { background-position: 0 -63px; }
+
+    &__AN { background-position: 0 -72px; }
+
+    &__AO { background-position: 0 -81px; }
+
+    &__AQ { background-position: 0 -90px; }
+
+    &__AR { background-position: 0 -99px; }
+
+    &__AS { background-position: 0 -108px; }
+
+    &__AT { background-position: 0 -117px; }
+
+    &__AU { background-position: 0 -126px; }
+
+    &__AW { background-position: 0 -135px; }
+
+    &__AX { background-position: 0 -144px; }
+
+    &__AZ { background-position: 0 -153px; }
+
+    &__BA { background-position: 0 -162px; }
+
+    &__BB { background-position: 0 -171px; }
+
+    &__BD { background-position: 0 -180px; }
+
+    &__BE { background-position: 0 -189px; }
+
+    &__BF { background-position: 0 -198px; }
+
+    &__BG { background-position: 0 -207px; }
+
+    &__BH { background-position: 0 -216px; }
+
+    &__BI { background-position: 0 -225px; }
+
+    &__BJ { background-position: 0 -234px; }
+
+    &__BL { background-position: 0 -243px; }
+
+    &__BM { background-position: 0 -252px; }
+
+    &__BN { background-position: 0 -261px; }
+
+    &__BO { background-position: 0 -270px; }
+
+    &__BR { background-position: 0 -279px; }
+
+    &__BS { background-position: 0 -288px; }
+
+    &__BT { background-position: 0 -297px; }
+
+    &__BV { background-position: 0 -306px; }
+
+    &__BW { background-position: 0 -315px; }
+
+    &__BY { background-position: 0 -324px; }
+
+    &__BZ { background-position: 0 -333px; }
+
+    &__CA { background-position: 0 -342px; }
+
+    &__CC { background-position: 0 -351px; }
+
+    &__CD { background-position: 0 -360px; }
+
+    &__CF { background-position: 0 -369px; }
+
+    &__CG { background-position: 0 -378px; }
+
+    &__CH { background-position: 0 -387px; }
+
+    &__CI { background-position: 0 -396px; }
+
+    &__CK { background-position: 0 -405px; }
+
+    &__CL { background-position: 0 -414px; }
+
+    &__CM { background-position: 0 -423px; }
+
+    &__CN { background-position: 0 -432px; }
+
+    &__CO { background-position: 0 -441px; }
+
+    &__CR { background-position: 0 -450px; }
+
+    &__CU { background-position: 0 -459px; }
+
+    &__CV { background-position: 0 -468px; }
+
+    &__CX { background-position: 0 -477px; }
+
+    &__CY { background-position: 0 -486px; }
+
+    &__CZ { background-position: 0 -495px; }
+
+    &__DE { background-position: 0 -504px; }
+
+    &__DJ { background-position: 0 -513px; }
+
+    &__DK { background-position: 0 -522px; }
+
+    &__DM { background-position: 0 -531px; }
+
+    &__DO { background-position: 0 -540px; }
+
+    &__DZ { background-position: 0 -549px; }
+
+    &__EC { background-position: 0 -558px; }
+
+    &__EE { background-position: 0 -567px; }
+
+    &__EG { background-position: 0 -576px; }
+
+    &__EH { background-position: 0 -585px; }
+
+    &__ER { background-position: 0 -594px; }
+
+    &__ES-CE { background-position: 0 -603px; }
+
+    &__ES-ML { background-position: 0 -612px; }
+
+    &__ES { background-position: 0 -621px; }
+
+    &__ET { background-position: 0 -630px; }
+
+    &__EU { background-position: 0 -639px; }
+
+    &__FI { background-position: 0 -648px; }
+
+    &__FJ { background-position: 0 -657px; }
+
+    &__FK { background-position: 0 -666px; }
+
+    &__FM { background-position: 0 -675px; }
+
+    &__FO { background-position: 0 -684px; }
+
+    &__FR { background-position: 0 -693px; }
+
+    &__GA { background-position: 0 -702px; }
+
+    &__GB { background-position: 0 -711px; }
+
+    &__GD { background-position: 0 -720px; }
+
+    &__GE { background-position: 0 -729px; }
+
+    &__GF { background-position: 0 -738px; }
+
+    &__GG { background-position: 0 -747px; }
+
+    &__GH { background-position: 0 -756px; }
+
+    &__GI { background-position: 0 -765px; }
+
+    &__GL { background-position: 0 -774px; }
+
+    &__GM { background-position: 0 -783px; }
+
+    &__GN { background-position: 0 -792px; }
+
+    &__GP { background-position: 0 -801px; }
+
+    &__GQ { background-position: 0 -810px; }
+
+    &__GR { background-position: 0 -819px; }
+
+    &__GS { background-position: 0 -828px; }
+
+    &__GT { background-position: 0 -837px; }
+
+    &__GU { background-position: 0 -846px; }
+
+    &__GW { background-position: 0 -855px; }
+
+    &__GY { background-position: 0 -864px; }
+
+    &__HK { background-position: 0 -873px; }
+
+    &__HM { background-position: 0 -882px; }
+
+    &__HN { background-position: 0 -891px; }
+
+    &__HR { background-position: 0 -900px; }
+
+    &__HT { background-position: 0 -909px; }
+
+    &__HU { background-position: 0 -918px; }
+
+    &__IC { background-position: 0 -927px; }
+
+    &__ID { background-position: 0 -936px; }
+
+    &__IE { background-position: 0 -945px; }
+
+    &__IL { background-position: 0 -954px; }
+
+    &__IM { background-position: 0 -963px; }
+
+    &__IN { background-position: 0 -972px; }
+
+    &__IO { background-position: 0 -981px; }
+
+    &__IQ { background-position: 0 -990px; }
+
+    &__IR { background-position: 0 -999px; }
+
+    &__IS { background-position: 0 -1008px; }
+
+    &__IT { background-position: 0 -1017px; }
+
+    &__JE { background-position: 0 -1026px; }
+
+    &__JM { background-position: 0 -1035px; }
+
+    &__JO { background-position: 0 -1044px; }
+
+    &__JP { background-position: 0 -1053px; }
+
+    &__KE { background-position: 0 -1062px; }
+
+    &__KG { background-position: 0 -1071px; }
+
+    &__KH { background-position: 0 -1080px; }
+
+    &__KI { background-position: 0 -1089px; }
+
+    &__KM { background-position: 0 -1098px; }
+
+    &__KN { background-position: 0 -1107px; }
+
+    &__KOSOVO { background-position: 0 -1116px; }
+
+    &__KP { background-position: 0 -1125px; }
+
+    &__KR { background-position: 0 -1134px; }
+
+    &__KW { background-position: 0 -1143px; }
+
+    &__KY { background-position: 0 -1152px; }
+
+    &__KZ { background-position: 0 -1161px; }
+
+    &__LA { background-position: 0 -1170px; }
+
+    &__LB { background-position: 0 -1179px; }
+
+    &__LC { background-position: 0 -1188px; }
+
+    &__LI { background-position: 0 -1197px; }
+
+    &__LK { background-position: 0 -1206px; }
+
+    &__LR { background-position: 0 -1215px; }
+
+    &__LS { background-position: 0 -1224px; }
+
+    &__LT { background-position: 0 -1233px; }
+
+    &__LU { background-position: 0 -1242px; }
+
+    &__LV { background-position: 0 -1251px; }
+
+    &__LY { background-position: 0 -1260px; }
+
+    &__MA { background-position: 0 -1269px; }
+
+    &__MC { background-position: 0 -1278px; }
+
+    &__MD { background-position: 0 -1287px; }
+
+    &__ME { background-position: 0 -1296px; }
+
+    &__MF { background-position: 0 -1305px; }
+
+    &__MG { background-position: 0 -1314px; }
+
+    &__MH { background-position: 0 -1323px; }
+
+    &__MK { background-position: 0 -1332px; }
+
+    &__ML { background-position: 0 -1341px; }
+
+    &__MM { background-position: 0 -1350px; }
+
+    &__MN { background-position: 0 -1359px; }
+
+    &__MO { background-position: 0 -1368px; }
+
+    &__MP { background-position: 0 -1377px; }
+
+    &__MQ { background-position: 0 -1386px; }
+
+    &__MR { background-position: 0 -1395px; }
+
+    &__MS { background-position: 0 -1404px; }
+
+    &__MT { background-position: 0 -1413px; }
+
+    &__MU { background-position: 0 -1422px; }
+
+    &__MV { background-position: 0 -1431px; }
+
+    &__MW { background-position: 0 -1440px; }
+
+    &__MX { background-position: 0 -1449px; }
+
+    &__MY { background-position: 0 -1458px; }
+
+    &__MZ { background-position: 0 -1467px; }
+
+    &__NA { background-position: 0 -1476px; }
+
+    &__NC { background-position: 0 -1485px; }
+
+    &__NE { background-position: 0 -1494px; }
+
+    &__NF { background-position: 0 -1503px; }
+
+    &__NG { background-position: 0 -1512px; }
+
+    &__NI { background-position: 0 -1521px; }
+
+    &__NKR { background-position: 0 -1530px; }
+
+    &__NL { background-position: 0 -1539px; }
+
+    &__NO { background-position: 0 -1548px; }
+
+    &__NP { background-position: 0 -1557px; }
+
+    &__NR { background-position: 0 -1566px; }
+
+    &__NU { background-position: 0 -1575px; }
+
+    &__NZ { background-position: 0 -1584px; }
+
+    &__OM { background-position: 0 -1593px; }
+
+    &__PA { background-position: 0 -1602px; }
+
+    &__PE { background-position: 0 -1611px; }
+
+    &__PF { background-position: 0 -1620px; }
+
+    &__PG { background-position: 0 -1629px; }
+
+    &__PH { background-position: 0 -1638px; }
+
+    &__PK { background-position: 0 -1647px; }
+
+    &__PL { background-position: 0 -1656px; }
+
+    &__PM { background-position: 0 -1665px; }
+
+    &__PN { background-position: 0 -1674px; }
+
+    &__PR { background-position: 0 -1683px; }
+
+    &__PS { background-position: 0 -1692px; }
+
+    &__PT { background-position: 0 -1701px; }
+
+    &__PW { background-position: 0 -1710px; }
+
+    &__PY { background-position: 0 -1719px; }
+
+    &__QA { background-position: 0 -1728px; }
+
+    &__RE { background-position: 0 -1737px; }
+
+    &__RO { background-position: 0 -1746px; }
+
+    &__RS { background-position: 0 -1755px; }
+
+    &__RU { background-position: 0 -1764px; }
+
+    &__RW { background-position: 0 -1773px; }
+
+    &__SA { background-position: 0 -1782px; }
+
+    &__SB { background-position: 0 -1791px; }
+
+    &__SC { background-position: 0 -1800px; }
+
+    &__SD { background-position: 0 -1809px; }
+
+    &__SE { background-position: 0 -1818px; }
+
+    &__SG { background-position: 0 -1827px; }
+
+    &__SH { background-position: 0 -1836px; }
+
+    &__SI { background-position: 0 -1845px; }
+
+    &__SJ { background-position: 0 -1854px; }
+
+    &__SK { background-position: 0 -1863px; }
+
+    &__SL { background-position: 0 -1872px; }
+
+    &__SM { background-position: 0 -1881px; }
+
+    &__SN { background-position: 0 -1890px; }
+
+    &__SO { background-position: 0 -1899px; }
+
+    &__SOUTH-OSSETIA { background-position: 0 -1908px; }
+
+    &__SR { background-position: 0 -1917px; }
+
+    &__SS { background-position: 0 -1926px; }
+
+    &__ST { background-position: 0 -1935px; }
+
+    &__SV { background-position: 0 -1944px; }
+
+    &__SY { background-position: 0 -1953px; }
+
+    &__SZ { background-position: 0 -1962px; }
+
+    &__TC { background-position: 0 -1971px; }
+
+    &__TD { background-position: 0 -1980px; }
+
+    &__TF { background-position: 0 -1989px; }
+
+    &__TG { background-position: 0 -1998px; }
+
+    &__TH { background-position: 0 -2007px; }
+
+    &__TJ { background-position: 0 -2016px; }
+
+    &__TK { background-position: 0 -2025px; }
+
+    &__TL { background-position: 0 -2034px; }
+
+    &__TM { background-position: 0 -2043px; }
+
+    &__TN { background-position: 0 -2052px; }
+
+    &__TO { background-position: 0 -2061px; }
+
+    &__TR { background-position: 0 -2070px; }
+
+    &__TT { background-position: 0 -2079px; }
+
+    &__TV { background-position: 0 -2088px; }
+
+    &__TW { background-position: 0 -2097px; }
+
+    &__TZ { background-position: 0 -2106px; }
+
+    &__UA { background-position: 0 -2115px; }
+
+    &__UG { background-position: 0 -2124px; }
+
+    &__UM { background-position: 0 -2133px; }
+
+    &__US { background-position: 0 -2142px; }
+
+    &__UY { background-position: 0 -2151px; }
+
+    &__UZ { background-position: 0 -2160px; }
+
+    &__VA { background-position: 0 -2169px; }
+
+    &__VC { background-position: 0 -2178px; }
+
+    &__VE { background-position: 0 -2187px; }
+
+    &__VG { background-position: 0 -2196px; }
+
+    &__VI { background-position: 0 -2205px; }
+
+    &__VN { background-position: 0 -2214px; }
+
+    &__VU { background-position: 0 -2223px; }
+
+    &__WF { background-position: 0 -2232px; }
+
+    &__WS { background-position: 0 -2241px; }
+
+    &__YE { background-position: 0 -2250px; }
+
+    &__YT { background-position: 0 -2259px; }
+
+    &__ZA { background-position: 0 -2268px; }
+
+    &__ZM { background-position: 0 -2277px; }
+
+    &__ZW { background-position: 0 -2286px; }
+}
