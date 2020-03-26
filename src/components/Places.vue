@@ -61,7 +61,7 @@ import { mapState, mapMutations, mapActions } from "vuex";
 export default {
   name: "Places",
   computed: {
-    ...mapState(["selectedCountries", "isLoading"]),
+    ...mapState(["selectedCountries", "isLoading", 'finished']),
     isEnabledActionButtons() {
       return !!this.selectedCountries.length && !this.isLoading;
     }
@@ -84,6 +84,9 @@ export default {
     },
     remove(i) {
       this.REMOVE_COUNTRY(i);
+      if(!this.selectedCountries.length && this.finished) {
+        this.SET_FINISH(false)
+      }
     },
     clear() {
       this.CLEAR_SELECTED_COUNTRIES();
