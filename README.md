@@ -1,13 +1,17 @@
 # trip-plan-vue
-#DEMO
+## DEMO
 <a href="https://vagabond-noise.surge.sh/">thanks to surge for fast & free hosting!</a>
 
 <p align="center">
     <img src="/preview-trip-app-vue.png"/>
 </p>
-# TODO
-- translate
-- searchable
+
+## TODO
+
+- Translate
+
+- Search
+
 - PWA
 
 ## Project setup
